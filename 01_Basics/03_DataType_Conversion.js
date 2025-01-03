@@ -20,3 +20,20 @@ console.log(typeof(mobNumber))
 console.log(mobNumber)
 
 // We get "NaN" whose full form is "Not a number". It is a special datatype which show up as Number even though it is not.
+
+
+// When converting Boolean value "True" return "1" if false then "0"
+let isBoolean = true
+
+let isNumber = Number(isBoolean)
+console.log(isNumber)
+
+
+// When using " "(empty string) and "fwefwe"(filled string) to Number datatype
+let emptyString = ""
+let filledString = "dvced"
+
+let convertNumber = Number(emptyString)
+let convertNumberTwo = Number(filledString)
+console.log(convertNumber)      // Returns 0
+console.log(convertNumberTwo)      // Returns NaN
