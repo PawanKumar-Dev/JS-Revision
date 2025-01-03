@@ -33,8 +33,6 @@ console.log(user)
 
 let userOne = user
 let userTwo = user
-console.log(userOne)
-console.log(userTwo)
 
 // See what happens when we change values in only "userTwo" variable
 userTwo.workHours = 15
