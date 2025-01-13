@@ -4,6 +4,7 @@ let a = 5
 const b = 7
 var c = 9
 
+
 // Here we see no difference in execution
 console.log(a)
 console.log(b)
