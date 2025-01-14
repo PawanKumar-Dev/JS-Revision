@@ -6,4 +6,5 @@ const user = {
     }
 }
 
+// Returns answer correctly
 console.log(user.welcomeMessage())
