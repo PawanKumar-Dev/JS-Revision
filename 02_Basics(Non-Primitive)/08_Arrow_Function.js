@@ -47,5 +47,19 @@ const person = {
 // This works properly since this function declaration
 person.greet()
 
-// But arrow function returns "undefined" when used for "this" keyword
+// But arrow function returns "undefined" when used for "this" keyword. This happens becoz our node js is running by default in strict mode.
 person.greetTwo()
+
+
+// But if arrow function is utilized inside another method in Object, "this" keyword then refers to context of method itself. Which is the object.
+const employee = {
+    name : "Raju",
+    greeting : function() {
+        greetingTwo = () => {
+            console.log(this.name)
+        }
+        greetingTwo()
+    }
+}
+
+employee.greeting()
