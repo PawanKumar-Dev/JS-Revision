@@ -13,3 +13,7 @@ console.log(sumTwo(8, 2))
 
 
 // Remember when using {} curly-braces, we must use "return" keyword
+// Similarly when using Shorten Arrow Function to return an Object is different:
+const sumThree = () => ({username: "Pawan K"})
+
+console.log(sumThree())
