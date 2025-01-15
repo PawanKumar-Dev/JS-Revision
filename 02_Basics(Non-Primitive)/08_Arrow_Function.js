@@ -16,6 +16,7 @@ user.welcomeMessage()
 // But when we use "this" keyword in Node JS environment. It refers to {} or an empty object.
 console.log(this)
 
+
 // Same if you excute it in Browser environment "this" refers to "Window" object.
 // Now Arrow function are a bit shorter form to Function Expression
 const sum = (num1, num2) => {
