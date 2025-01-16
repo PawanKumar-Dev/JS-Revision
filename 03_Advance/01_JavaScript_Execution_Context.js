@@ -7,5 +7,45 @@
 
 /*  Every Execution Context process our code in mainly two steps:
     1. Memory Creation Phase / Creation Phase :  Variables & functions first get allocted memory space as undefined, functions get assigned their defination only. Nothing else.
-    2. Execution Phase: Variables get assigned values and then get executed. Functions get their own Global execution inside Function execution context.
+    2. Execution Phase: Variables get assigned values and then get executed. Functions get their own execution context inside Function execution context.
 */
+
+// JS uses a call stack to manage execution contexts. The stack ensures that execution contexts are processed in a Last In, First Out (LIFO) order.
+function one() {
+    console.log("One")
+}
+
+function two() {
+    console.log("Two")
+}
+
+function three() {
+    console.log("Three")
+}
+
+// Here our call-stack is simple. Each function execute and deleted from call-stack.
+// one()
+// two()
+// three()
+
+
+// Thing change in Call-stack if functions are passed as callback functions.
+function aOne() {
+    console.log("aOne")
+    bTwo()
+}
+
+function bTwo() {
+    console.log("bTwo")
+    cThree()
+}
+
+function cThree() {
+    console.log("cThree")
+}
+
+aOne()
+bTwo()
+cThree()
+
+// You can run above code in broswer Source>Snippets tab. That will show you how call stack is called and reset.
