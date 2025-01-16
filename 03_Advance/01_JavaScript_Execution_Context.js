@@ -24,9 +24,9 @@ function three() {
 }
 
 // Here our call-stack is simple. Each function execute and deleted from call-stack.
-// one()
-// two()
-// three()
+one()
+two()
+three()
 
 
 // Thing change in Call-stack if functions are passed as callback functions.
@@ -49,3 +49,11 @@ bTwo()
 cThree()
 
 // You can run above code in broswer Source>Snippets tab. That will show you how call stack is called and reset.
+
+/* Summary:
+1. JS creates Global Execution Context.
+2. Next it creates Memory Phase.
+3. Memory phase :- In this phase, variables are set to 'undefined' until the execution phase(next phase) and the functions are set to their definitions.
+4. Next it creates the Execution Phase.
+5. Execution Phase - In this phase, variables are assigned given values and when the functions are called, it creates a Memory Phase and Execution Phase for the function just like the Global Execution Context.
+*/
