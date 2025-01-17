@@ -30,7 +30,7 @@ if(userArray.length === 0) {
     console.log("Array is empty")
 }
 
-// Similarly you can check if an Object is empty.
+// Similarly you can check if an Object is empty. First, we convert our object into array of keys using method Object.keys(). Then check for its length.
 const userObject = {}
 
 if(Object.keys(userObject).length === 0) {
