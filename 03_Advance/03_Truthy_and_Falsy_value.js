@@ -20,3 +20,19 @@
 */
 
 // Be cautious when using truthy and falsy values in conditionals. JS type coercion can lead to unexpected results. Always validate to avoid bugs.
+// For example some tricky value that are true: "false", '0', 
+
+
+// Now to check if your array is empty. Check its length.
+const userArray = []
+
+if(userArray.length === 0) {
+    console.log("Array is empty")
+}
+
+// Similarly you can check if an Object is empty.
+const userObject = {}
+
+if(Object.keys(userObject).length === 0) {
+    console.log("Object is empty")
+}
