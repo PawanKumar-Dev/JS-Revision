@@ -18,3 +18,10 @@ for(const key in myObj) {
     // console.log(myObj[key])      // We extract values of object using keys
     console.log(`${key} : ${myObj[key]}`)
 }
+
+// "for in" loop can work with array as well
+const myArray = ["C++", "JavaScript", "PHP", "Python", "HTML"]
+
+for(const element in myArray) {
+    console.log(myArray[element])
+}
