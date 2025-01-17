@@ -11,11 +11,11 @@ if(2 == "2") {
     console.log("Condition is true")
 }
 
-// Shorthand of "if statement"
-if(2 != 3) console.log("Condition true")
+// Shorthand of "if statement". Use semicolon to end the scope.
+if(2 != 3) console.log("Condition true");
 
-// You can return multiple statement by using comma only
-if(2 <= 3) console.log("Condition true"), console.log("2 is lesser than 3")
+// You can return multiple statement by using comma only. Use semicolon to end the scope.
+if(2 <= 3) console.log("Condition true"), console.log("2 is lesser than 3");
 
 
 // We can check multiple condition by using &&(And Operator) and ||(Or Operator)
