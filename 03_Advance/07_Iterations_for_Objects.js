@@ -25,3 +25,15 @@ const myArray = ["C++", "JavaScript", "PHP", "Python", "HTML"]
 for(const element in myArray) {
     console.log(myArray[element])
 }
+
+
+// Though "for in" loop will not work in Map data structure
+const myMap = new Map()
+
+myMap.set("HTML", "Hyper Text Markup Langauge")
+myMap.set("CSS", "Cascading Style Sheet")
+myMap.set("JS", "JavaScript")
+
+for(const key in myMap) {
+    console.log(key)
+}
