@@ -17,3 +17,30 @@ myArray.forEach(function (item) {
 myArray.forEach((item)=> {
     console.log(`Doing with Arrow function: ${item}`)
 })
+
+
+// Beside values, we can also access index and whole array in forEach loop.
+myArray.forEach((value, index, fullArray)=>{
+    console.log(`Value: ${value}, Index: ${index} and full array: ${fullArray}`)
+})
+
+// Most common way to extract data from DB is JS objects array. And forEach loop handle such data best.
+const arrayOfObjects = [
+    {
+        languageName : "JavaScript",
+        shortHand : "JS"
+    },
+    {
+        languageName : "Hypertext Preprocessor",
+        shortHand : "PHP"
+    },
+    {
+        languageName : "Hyper Text Markup Language",
+        shortHand : "HTML"
+    },
+]
+
+// In this case "item" refers to our individual object inside the array. Then just dot(.) notation to access inside the object.
+arrayOfObjects.forEach((item)=> {
+    console.log(item.languageName)
+})
