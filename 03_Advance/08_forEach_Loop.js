@@ -14,12 +14,6 @@ myArray.forEach(function (item) {
     console.log(item)
 })
 
-// returns "undefined". So only use forEach when printing data or excuting something. it doesn't return anything.
-const values = myArray.forEach(function (item) {
-    return item
-})
-console.log(values)
-
 
 // Similarly we can shorten our code with Arrow function as callback function
 myArray.forEach((item)=> {
@@ -52,3 +46,10 @@ const arrayOfObjects = [
 arrayOfObjects.forEach((item)=> {
     console.log(item.languageName)
 })
+
+
+// returns "undefined". So only use forEach when printing data or excuting something. it doesn't return anything.
+const values = myArray.forEach(function (item) {
+    return item
+})
+console.log(values)
