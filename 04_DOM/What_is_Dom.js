@@ -19,3 +19,17 @@ const titleDataClass = document.getElementById("title").className       // Retur
 console.log(titleData)
 console.log(titleDataId)
 console.log(titleDataClass)
+
+
+// Similar to this we can get data by using "getAttribute()" methods and set new data in HTML with "setAttribute() methods"
+const headingData = document.getElementById("title").getAttribute("class")
+const headingDataId = document.getElementById("title").getAttribute("id")
+
+console.log(headingData)
+console.log(headingDataId)
+
+
+// This replaces the existing class 'h1' with 'myNewClass'
+document.getElementById("title").setAttribute("class", "myNewClass")
+
+console.log(titleData)
