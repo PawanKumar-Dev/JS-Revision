@@ -33,3 +33,9 @@ console.log(headingDataId)
 document.getElementById("title").setAttribute("class", "myNewClass")
 
 console.log(titleData)
+
+
+// We can change styling of element with "style" method. You would see that h1 element is now blue in color.
+// Both are same
+titleData.style.color = "blue"
+document.getElementById("title").style.color = "red"
