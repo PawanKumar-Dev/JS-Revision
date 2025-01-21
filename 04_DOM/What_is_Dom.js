@@ -10,6 +10,12 @@ console.log(window)
 console.dir(document)
 
 
-// "getElementById" method in JS can select and manipulate a specific DOM (Document Object Model) element by its unique id attribute.
-const titleData = document.getElementById(title)
+// "getElementById" method in JS can select and manipulate a specific DOM element by its unique id attribute. Then we can manipulate it.
+
+const titleData = document.getElementById("title")                      // Returns the h1 element: '<h1 id="title">this data can be changed by id</h1>'.
+const titleDataId = document.getElementById("title").id                 // Returns the id of element selected: 'title'
+const titleDataClass = document.getElementById("title").className       // Returns classname: 'h1'
+
 console.log(titleData)
+console.log(titleDataId)
+console.log(titleDataClass)
