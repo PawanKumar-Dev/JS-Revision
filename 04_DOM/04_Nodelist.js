@@ -13,4 +13,5 @@ console.log(myUlList)
 myUlList[0].style.color = "green"
 
 
-// 
+// NodeList does support forEach() method. All li will have bg color as orange.
+myUlList.forEach((item) => item.style.backgroundColor = 'orange')
