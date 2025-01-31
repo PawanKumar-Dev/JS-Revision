@@ -4,7 +4,6 @@
 
 
 // Two module systems:
-
 /*
   1. CommonJS Modules (used mainly in Node.js)
     Uses "require" for importing modules.
@@ -19,3 +18,6 @@
     Supports both synchronous and asynchronous loading (in browsers).
     Can be used in both client-side and server-side applications.
 */
+
+
+// When using ES6 Modules, use .mjs extensions or set "type": "module" in package.json
