@@ -6,7 +6,7 @@ Acc. to offical documentation all datatypes in JS can divided into 2 types based
     2. Non-Primitive (Array, Object, Function)
 */
 
-// Primitive datatypes are stored and retrived from "Stack" memory. Hence refered as "call by value" datatypes. Becoz when we retrive them, we get copy of original value.
+// Primitive datatypes(immutable) are stored and retrived from "Stack" memory. Hence refered as "call by value" datatypes. Becoz when we retrive them, we get copy of original value.
 
 let userName = "Pawan"
 console.log(userName)
