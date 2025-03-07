@@ -1,4 +1,5 @@
-// Math is built-in object of JS. It works excusivily with Numbers. It's not a constructor hence no instance of Math.
+// Math is built-in gloabl object of JS.
+// It works excusivily with Numbers. It's not a constructor hence no instance of Math.
 // Math provide some basic/essitianl methods for us.
 
 // abs() method always return positive number
