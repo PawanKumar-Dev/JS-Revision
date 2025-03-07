@@ -14,7 +14,10 @@ console.log(typeof(null))
 
 
 // Also when you simply compare two they show up as "true"
+// When using loose equality operator (==), JS performs type coercion before comparing the values. And acc to the ECMAScript specification, when comparing "undefined" and "null", they are considered equal.
+// Why? Becoz after conversion both comes as empty values. 
 console.log(undefined == null)
 
 // But on strict comparison it returns false.
+// Becoz there is no type coercion.
 console.log(undefined === null)
