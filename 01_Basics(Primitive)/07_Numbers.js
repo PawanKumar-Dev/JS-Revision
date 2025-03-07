@@ -1,4 +1,4 @@
-// Similar to Strings, number can be converted to Number Object when using keyword "new Number()" or via autoboxing/type-corcion.
+// Similar to Strings, number can be converted to Number Object when using keyword "new Number()" or via autoboxing/type-corcion when using (==)loose equality operator.
 let score = 100
 console.log(score)
 console.log(typeof(score))
