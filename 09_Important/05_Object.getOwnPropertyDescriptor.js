@@ -17,3 +17,15 @@ console.log(Object.getOwnPropertyDescriptor(Math, "PI"));
 
 // JS property descriptors give you a granular control over how object properties behave.
 // We can customize aspects of a property such as whether it can be changed, enumerated (looped over), or reconfigured.
+const obj = {};
+
+Object.defineProperty(obj, "number", {
+  value: 42,
+  writable: false,      // The value cannot be changed.
+  enumerable: true,     // It will be listed in enumeration.
+  configurable: false   // It cannot be deleted or reconfigured.
+});
+
+console.log(obj.number); // 42
+obj.number = 100;        // Fails silently (or throws in strict mode)
+console.log(obj.number); // Still 42
