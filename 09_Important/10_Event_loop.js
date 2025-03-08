@@ -7,5 +7,5 @@
 
 
 // And event loop prioritize our task based on two main queues:
-// 1. Macrotask Queue
-// 2. Microtask Queue
+// 1. Macrotask Queue: setTimeout, setInterval, Network request, UI Rendering etc.
+// 2. Microtask Queue (Higher Priority): Promises, queueMicrotask(), process.nextTick() in Node.js
