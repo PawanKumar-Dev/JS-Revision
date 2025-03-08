@@ -4,11 +4,11 @@
 // Example where (...)Rest Operator is used are:
 // 1. Function Parameters: When defining a function, using ... in the parameters collects all arguments into an array.
 function sumOfAllNums(...nums) {
-  nums.map((item) => item += item)
+    let total = 0
+    nums.forEach((item) => total += item )
+    return total
 }
-
 console.log(sumOfAllNums(1, 2, 3))
-
 
 
 // Destructuring Assignments: When extracting values from an array or object and you want to group the "remaining" elements/properties.
