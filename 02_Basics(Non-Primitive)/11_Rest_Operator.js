@@ -12,3 +12,12 @@ console.log(sumOfAllNums(1, 2, 3))
 
 
 // Destructuring Assignments: When extracting values from an array or object and you want to group the "remaining" elements/properties.
+const jobseeker = {
+    name: "john",
+    resume: "johnResume.pdf",
+    age: 22,
+    occupation: "Engineer"
+}
+
+const {name, resume, ...otherDetails} = jobseeker
+console.log(name, resume, otherDetails)
