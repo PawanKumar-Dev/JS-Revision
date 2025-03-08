@@ -13,20 +13,3 @@ function mySum(num1, num2) {
 }
 
 console.log(mySum(4,5))     //Returns 9
-
-/*
-...Rest operator is Opposite to ...spread operator
-This allow us to collect values and combine them into an array.
-*/
-function total(...num) {
-    return num
-}
-
-console.log(total(100, 200, 300))       //returns [ 100, 200, 300 ]
-
-
-function newTotal(num1, num2, ...num) {
-    return num
-}
-
-console.log(newTotal(1, 2, 3, 4, 5))
