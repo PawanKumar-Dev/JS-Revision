@@ -1,4 +1,5 @@
-// "let" and "const" always define local scope. But "var" is global scope.
+// "let" and "const" always define local scope.
+// But "var" is functional scope(if not inside a function, it attach itself to global scope causing variable pollution).
 // This is why "var" is avoided in modern JS since this can cause override.
 let a = 5
 const b = 7
