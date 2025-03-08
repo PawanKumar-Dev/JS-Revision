@@ -5,8 +5,8 @@
 
 
 // But JS is designed to handle asynchronous tasks (like network requests, timers, or (file operations in Node.js)) using mechanisms like callbacks, Promises, and async/await.
+
+
 // The browser or Node.js environment provides external APIs for these asynchronous operations.
-// Once an async task (for instance, a timer or an HTTP fetch) is done, its callback is added to a "callback queue".
+// Once async task (for instance, a timer or an HTTP fetch) is done, its callback is added to a "callback queue".
 // The "event loop" then picks up these callbacks and pushes them onto the call stack when it's free.
-
-
