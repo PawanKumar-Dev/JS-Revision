@@ -12,9 +12,14 @@ console.log(multiply(...arr))
 let arr1 = [7, "apple", true, 19, "hello", false, 3.5, "GPT", 10, null]
 let arr2 = ["start", "end"]
 
-let arr3 = [...arr2, arr1]
+// This gives you new merged array which contain both arrays elements.
+let arr3 = [...arr2, ...arr1]
 console.log(arr3)
 
-/*
-Object Literals: Merging objects or creating a shallow copy.
-*/
+// And if you want to merge two array so that "start" comes first and "end" is last.
+// Then we can do so with (...)Spread Operator.
+let arr4 = ["start", ...arr1, "end"]
+console.log(arr4)
+
+
+// Object Literals: Merging objects or creating a shallow copy.
