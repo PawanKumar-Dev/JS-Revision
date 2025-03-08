@@ -4,3 +4,12 @@
 
 // And when the call stack is free, the event loop takes the first callback from the callback queue and pushes it onto the call stack for execution.
 // And this process enables JS to handle Asynchronous tasks without truly running them concurrently.
+
+
+// And event loop prioritize our task based on two main queues:
+
+Macrotask Queue (Task Queue)
+
+Microtask Queue (Job Queue)
+
+While both queues hold callbacks waiting to be executed, they are processed with different priorities.
