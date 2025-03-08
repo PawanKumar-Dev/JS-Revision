@@ -22,4 +22,33 @@ let arr4 = ["start", ...arr1, "end"]
 console.log(arr4)
 
 
-// Object Literals: Merging objects or creating a shallow copy.
+// Object Literals: We can also merge objects using (...)Spread Operator.
+// Unlike arrays, when spreading objects, you don't get an "ordering" of values, but rather a merging of properties.
+// That is if there are overlapping keys, the latter values will overwrite the former ones.
+let person = {
+    name: "Alice",
+    age: 25,
+    color: "black"
+}
+
+let car = {
+    brand: "Tesla",
+    isElectric: true,
+    color: "black"
+}
+
+let newObject = { ...person, ...car }
+console.log(newObject)
+
+/*
+ Returns a new object like this:
+ {
+     name: 'Alice',
+     age: 25,
+     color: 'black',
+     brand: 'Tesla',
+     isElectric: true
+ }
+*/
+
+// As we can see `color: black` get merged becoz "key" are same.
