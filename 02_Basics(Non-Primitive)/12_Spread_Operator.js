@@ -7,7 +7,14 @@ function multiply(a, b, c) {
 }
 console.log(multiply(...arr))
 
+
+// Array Literals: Combining or copying arrays is another common use of (...)Spread Operator.
+let arr1 = [7, "apple", true, 19, "hello", false, 3.5, "GPT", 10, null]
+let arr2 = ["start", "end"]
+
+let arr3 = [...arr2, arr1]
+console.log(arr3)
+
 /*
-Array Literals: Combining or copying arrays.
 Object Literals: Merging objects or creating a shallow copy.
 */
