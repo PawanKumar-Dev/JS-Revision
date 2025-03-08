@@ -7,9 +7,5 @@
 
 
 // And event loop prioritize our task based on two main queues:
-
-Macrotask Queue (Task Queue)
-
-Microtask Queue (Job Queue)
-
-While both queues hold callbacks waiting to be executed, they are processed with different priorities.
+// 1. Macrotask Queue
+// 2. Microtask Queue
