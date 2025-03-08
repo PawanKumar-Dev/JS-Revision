@@ -21,3 +21,9 @@ const jobseeker = {
 
 const {name, resume, ...otherDetails} = jobseeker
 console.log(name, resume, otherDetails)
+
+// As we can see we extracted first two values and wrapped the rest in sepreate object using (...)Rest Operator.
+// Same things can be done using Array Destructing.
+
+// Note: In an array destructuring pattern, the rest element must come "last" position.
+// In object, it can come anywhere after specifying other properties (though conventionally placed at the end for clarity).
