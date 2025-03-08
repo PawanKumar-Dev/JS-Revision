@@ -1,7 +1,7 @@
 /*  forEach loop is probably the most used and famous loop in JS.
     Inbuilt in any JS array prototype. Hence also called High Order loop.
     map loop is similar in nature.
-    But forEach loop never returns anything.
+    But forEach loop never returns only "undefined".
 */
 const myArray = ["html", "css", "js", "nodejs", "php", "mysql"]
 
