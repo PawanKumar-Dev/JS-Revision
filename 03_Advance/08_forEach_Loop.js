@@ -26,7 +26,8 @@ myArray.forEach((value, index, fullArray)=>{
     console.log(`Value: ${value}, Index: ${index} and full array: ${fullArray}`)
 })
 
-// Most common way to extract data from DB is JS objects array. And forEach loop handle such data best.
+// Most common way to extract data from DB is "arrya of JS objects".
+// And forEach loop handle such data best.
 const arrayOfObjects = [
     {
         languageName : "JavaScript",
