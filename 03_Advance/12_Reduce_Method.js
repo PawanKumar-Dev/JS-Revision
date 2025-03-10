@@ -1,6 +1,7 @@
-// reduce() method also takes a callback method.
-// But reduce specialize in summing up whole arrays and giving you their grand total.
-// Lets assume we want sum total of "mySampleArray" values.
+// reduce() method also takes a callback function.
+// But reduce() specialize in summing up whole array and giving you its grand total.
+
+// For example, assume we want sum total of "mySampleArray" values.
 const mySampleArray = [ 1, 2, 3 ]
 
 
