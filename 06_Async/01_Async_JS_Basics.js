@@ -7,11 +7,13 @@
 
 // JS engine only contains our "execution-context": which have call stack and Heap memory.
 // To make it async we add different things to this base JS engine.
-// In browser environment, JS engine run with others like "browser web apis", "task queues" and "high priority queues".
+
+// In browser environment, JS engine run with others things like:
+// "browser web apis/external apis", "task queues/callback queue" and "high priority queues/microtask queue". And even "event loop";
 
 
 // Whenever we run browser events, we are accessing our DOM apis of browser.
-// Functions like setTimeout(), setInterval(), fetch() are part of DOM apis actually. We can check this by running console.log("window") cmnd.
+// Functions like setTimeout(), setInterval(), fetch() are part of DOM apis(External apis) actually.
 
 
 // Task Queues:  they manage our async request and decide which is sent to JS engine and when.
