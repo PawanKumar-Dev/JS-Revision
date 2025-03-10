@@ -32,11 +32,6 @@ const newUser = {
 console.log(newUser[id])    //Proper access of Symbol
 
 
-// ...spread operator also works with Objects also
-const finalObject = {...user, ...newUser}
-console.log(finalObject)
-
-
 // You can access all 'keys' and 'values' in Object using these methods
 console.log(Object.keys(user))
 console.log(Object.values(user))
