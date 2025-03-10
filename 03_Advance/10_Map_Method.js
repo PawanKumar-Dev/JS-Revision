@@ -1,5 +1,6 @@
-// map() loop also takes a callback function, similar to filter(), forEach() loop.
-// Like filter(), map() loop returns value and we can do something inside it just like forEach().
+// map() method also takes a callback function, similar to filter(), forEach() method.
+// And this callback function performs our action and returns data back.
+// Like filter(), map() also returns value.
 
 const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
