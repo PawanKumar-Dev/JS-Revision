@@ -20,7 +20,8 @@ console.log(myFilteredData1)
 console.log(myFilteredData2)
 
 
-// Now let's see how we access data from 'array of objects' using filter() loop. This useful when user use filters in website.
+// Now let's see how we access data from 'array of objects' using filter() loop.
+// This useful when user use filters in website.
 const arrOfUsers = [
     { id: 1, name: "Alice", age: 25 },
     { id: 2, name: "Bob", age: 30 },
@@ -28,7 +29,7 @@ const arrOfUsers = [
     { id: 4, name: "Diana", age: 35 },
 ]
 
-// E.g., user request for data about users who are older than 30
+// E.g., user requests for data about other users who are older than 30(our condtion here)
 const usersAgeData = arrOfUsers.filter((item)=> item.age >= 30)
 
 const usersIdData = arrOfUsers.filter((item)=> {return item.id >= 3})
