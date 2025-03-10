@@ -14,7 +14,7 @@ document.getElementById("btn").onclick = function () {
 /* Best and modern way is to use "addEventListener". They are powerful and support event propagation. "addEventListener" takes 3 parameters:
  1) "event name".
  2) "callback function".
- 3) "false" which by default false. Hence most time ignored.
+ 3) "false" which by default false. Hence most time ignored. But this controls "Event Propagation".
 */
 document.getElementById("menu").addEventListener("click", function () {
   console.log("menu btn clicked")
@@ -24,6 +24,7 @@ document.getElementById("menu").addEventListener("click", function () {
 
 // Another method to work with event use method: attachEvent()
 // Works in older Internet Explorer(before IE9) only. Other browsers will not support it.
+// Depraceted now.
 document.getElementById("close").attachEvent("click", function () {
   console.log("close btn clicked")
 })
