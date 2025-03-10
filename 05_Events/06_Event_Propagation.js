@@ -1,4 +1,9 @@
-// Event Propagation has two main modes: addEventListener(event, function, false). "true" is for capturing, "false" is for bubbling. By default "false" is selected.
+/* Event Propagation has two main modes: addEventListener(event, function, false). 
+  1. "true" is for "event capturing".
+  2. "false" is for "event bubbling".
+  
+  By default "false" is selected.
+*/
 
 // 1. Event Bubbling: This means the event starts from the target element and bubbles up to the root/parent element in the DOM.
 // For example: when we click "innerbox" we get first innerbox console msg. Then "outerbox" event msg too. This is called event bubbling.
