@@ -48,7 +48,7 @@ aOne()
 bTwo()
 cThree()
 
-// You can run above code in broswer Source>Snippets tab. That will show you how call stack is called and reset.
+// You can run above code in broswer Source > Snippets tab. That will show you how call stack is called and reset.
 
 /* Summary:
 1. JS creates Global Execution Context.
