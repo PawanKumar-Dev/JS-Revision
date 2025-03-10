@@ -7,6 +7,7 @@ if(userLoggedIn) {
 
 // Conditions are evaluted by comparison operators like: <, >, >=, <=, ==, !=, ===
 // Remember single (equalto =) is assignment operator. (==) is comparison operator. (===) is strict comparison operator which also check for data-type, besides the value.
+// Also (==) can cause type coercion. So be careful when using it.
 if(2 == "2") {
     console.log("Condition is true")
 }
