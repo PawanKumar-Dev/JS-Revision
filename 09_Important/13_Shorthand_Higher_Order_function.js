@@ -37,6 +37,8 @@ handler("Hello, world!")
 
 // This pattern is especially valuable in event handling, asynchronous operations, or any scenario where you need to set up a behavior in advance and trigger it later.
 
+
+/*
 Step 1: Create the function with a message
   handler("Hello, world!")
          │
@@ -45,6 +47,8 @@ Returns a new function (inner function) that "remembers" the message.
 
 Step 2: Later, call this returned function
   sayHello();  // Logs "Hello, world!" using the remembered message.
+
+*/
 
 
 
