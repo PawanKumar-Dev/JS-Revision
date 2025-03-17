@@ -7,4 +7,13 @@ const handler = function() {
 
 
 // Higher Order Function can be described in shorthand by using Arrow Function syntax.
-const handler = () => () => {}
+const handlerTwo = () => () => {}
+
+
+// These shorthand are used in middleware of Node.js or Redux extensively.
+const handlerThree = (message) => () => {
+  console.log(message)
+}
+
+const sayHello = handler("Hello, world!")
+sayHello(); // Logs: "Hello, world!"
