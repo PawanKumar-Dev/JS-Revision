@@ -13,6 +13,7 @@ const handler = function() {
 const handlerTwo = () => () => {}
 
 
+// For example:
 // These shorthand are used in middleware of Node.js or Redux extensively.
 const handlerThree = (message) => () => {
   console.log(message)
@@ -20,3 +21,26 @@ const handlerThree = (message) => () => {
 
 const sayHello = handler("Hello, world!")
 sayHello(); // Logs: "Hello, world!"
+
+
+// But then it raises a question: Can't we just return the message in first function. Why bother with second inner fuction?
+// When do the below our msg is logged immediatley with no control over when it logs.
+const handler = (message) => {
+  console.log(message)
+}
+handler("Hello, world!")
+
+
+// But when we use inner function, which uses clousure concept of JS, we can excute our msg logging when we want.
+// Becoz `handler("our message")` doesn't log the message.
+// Instead we have to call `sayHello`.
+
+// This pattern is especially valuable in event handling, asynchronous operations, or any scenario where you need to set up a behavior in advance and trigger it later.
+
+
+
+
+
+
+
+
