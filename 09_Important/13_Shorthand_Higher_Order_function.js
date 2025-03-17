@@ -7,6 +7,9 @@ const handler = function() {
 
 
 // Higher Order Function can be described in shorthand by using Arrow Function syntax.
+  // `const handlerTwo = () => ` This is the outer function which is returning inner function.
+  // `() => {}` This is the inner function which is being returned to outer function.
+
 const handlerTwo = () => () => {}
 
 
